@@ -1,0 +1,14 @@
+# Archivos de configuracion de Visual Studio Code
+.vscode/
+
+# Archivos temporales de registro o generados automaticamente
+*.log
+
+# Archivos de macOS
+.DS_Store
+
+# Archivos de Windows
+Thumbs.db
+
+# Si alguna vez usas Node.js/NPM (es buena practica incluirlo)
+node_modules/

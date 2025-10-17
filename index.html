@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PortalWeb - City Go</title>
+
+  <!-- Tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- SIDEBAR (overlay para móvil/tablet) -->
+  <aside id="sidebar" class="sidebar" aria-label="Menú principal">
+    <div class="sidebar-top">
+      <h2 class="brand">City Go</h2>
+      <button id="closeSidebar" class="close-btn" aria-label="Cerrar menú">&times;</button>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="#problematica">Problemática</a>
+      <a href="#proposito">Propósito</a>
+      <a href="#video">Tutorial informativo</a>
+      <a href="#info">Conoce más de City Go</a>
+      <a href="#mision">Misión</a>
+      <a href="#vision">Visión</a>
+      <a href="#fundador">Fundador</a>
+      <a id="whatsappSidebar" class="contact-link" href="#" target="_blank" rel="noopener">Contactar por WhatsApp</a>
+    </nav>
+
+    <div class="sidebar-foot">
+      <small>© 2025 City Go</small>
+    </div>
+  </aside>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-block">
+        <h1 class="brand-title">City Go</h1>
+        <p class="subtitle">Aplicación de soluciones ambientales — Chiclayo</p>
+      </div>
+
+      <div class="header-actions">
+        <!-- Botón para abrir sidebar en pantallas pequeñas -->
+        <button id="openSidebar" class="hamburger" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+
+        <!-- Menú principal horizontal (desktop) -->
+        <nav id="topNav" class="top-nav" aria-label="Menú principal">
+          <a href="#mision">Misión</a>
+          <a href="#vision">Visión</a>
+          <a href="#fundador">Fundador</a>
+          <a id="whatsappTop" class="top-whatsapp" href="#" target="_blank" rel="noopener">WhatsApp City Go</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="mainContent" class="container">
+    <!-- 1) Problemática (visible al cargar) -->
+    <section id="problematica" class="section page">
+      <h2>Problemática</h2>
+      <p>
+        En Chiclayo existen múltiples puntos críticos donde la acumulación de residuos sólidos afecta la salud pública y la calidad de vida.
+        Calles y avenidas con contenedores desbordados, barrancos y zonas de alto tránsito donde la basura no es recogida a tiempo,
+        generan malos olores, atraen vectores y agravan problemas de drenaje en temporadas de lluvia. Además hay falta de información clara
+        sobre horarios de recolección y pocos canales de reporte directo para que la ciudadanía comunique incidencias de forma rápida.
+        Esta combinación produce riesgo sanitario, deterioro del espacio público y rechazo ciudadano. City Go busca visibilizar y canalizar
+        esos reportes para que las autoridades y brigadas puedan priorizar intervenciones y mejorar la gestión de residuos.
+      </p>
+
+      <div class="gallery">
+        <figure>
+          <img src="img/puntoCritico.jpeg" alt="Acumulación de residuos en la vía pública">
+          <figcaption>Punto crítico: acumulación de residuos</figcaption>
+        </figure>
+        <figure>
+          <img src="img/contenedoreSaturados.jpeg" alt="Contenedores saturados">
+          <figcaption>Contenedores saturados que requieren atención</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 2) Propósito -->
+    <section id="proposito" class="section page">
+      <h2>Propósito</h2>
+      <p>
+        City Go tiene como propósito facilitar la comunicación entre los ciudadanos y las entidades responsables de la limpieza urbana, brindando información 
+        práctica sobre puntos de reciclaje, horarios de recolección y seguimiento de reportes ambientales.
+        Este sistema busca optimizar los tiempos de respuesta, promover la participación ciudadana y fortalecer la gestión ambiental a través del uso de herramientas digitales.
+        Como futuros ingenieros de sistemas, aplicamos nuestros conocimientos informáticos para diseñar soluciones tecnológicas que contribuyan al bienestar social,
+        fomenten una ciudad limpia, saludable y sostenible, y reduzcan los riesgos asociados a la acumulación de residuos, como malos olores y enfermedades.
+        City Go representa un compromiso con el presente y las futuras generaciones, impulsando el uso de la tecnología para preservar un entorno urbano más ordenado y responsable.
+      </p>
+    </section>
+
+    <!-- 3) Video (no autoplay) -->
+    <section id="video" class="section page">
+      <h2>Video Informativo</h2>
+      <p>En este video mostraremos contenido de concientización y cómo usar la app City Go descargando desde la PlayStore.</p>
+      <div class="video-wrap">
+        <!-- Reemplazado por la URL embed correcta (youtube-nocookie) -->
+        <iframe id="ytplayer"
+          src="https://www.youtube-nocookie.com/embed/FF79TJfBceM"
+          title="Video City Go"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- 4) Info App -->
+    <section id="info" class="section page">
+      <h2>Información PortalWeb "City Go"</h2>
+      <ul>
+        <li>Reportes con foto y ubicación (pronto: subida de imágenes desde la app).</li>
+        <li>Envío inmediato por WhatsApp al equipo City Go para atención rápida.</li>
+        <li>Guía de reciclaje y mapas con puntos de acopio.</li>
+        <li>Interfaz móvil optimizada (modo vertical) y compatibilidad web.</li>
+      </ul>
+    </section>
+
+    <!-- 5) Misión -->
+    <!-- BLOQUE: Misión | Visión | Objetivo (fila horizontal en desktop) -->
+    <section id="mvObjetivos" class="section page mv-row">
+      <div class="mv-card" id="mision" aria-labelledby="mision-title">
+        <h2 id="mision-title">Misión</h2>
+        <p>
+          Fomentar la participación activa de la ciudadanía en la gestión responsable de residuos mediante una plataforma accesible, 
+          práctica y confiable. City Go convierte cada reporte en una oportunidad de mejora, ofreciendo información precisa sobre rutas y 
+          horarios de recolección, facilitando la comunicación entre vecinos y brigadas municipales, y promoviendo hábitos sostenibles de
+          reciclaje y reutilización. Además, fortalecemos la conciencia ambiental mediante contenidos educativos y datos útiles que orientan 
+          a las autoridades hacia una planificación más eficiente y transparente.
+        </p>
+      </div>
+
+      <div class="mv-card" id="vision" aria-labelledby="vision-title">
+        <h2 id="vision-title">Visión</h2>
+        <p>
+          Consolidar a City Go como la herramienta digital líder en la región para el monitoreo participativo de residuos urbanos,
+          destacando por su innovación, confiabilidad y compromiso social. Aspiramos a ser un puente entre ciudadanía y gestión 
+          pública, impulsando una cultura ambiental responsable y colaborativa. Nuestra meta es contribuir a la construcción de 
+          ciudades más limpias, ordenadas y saludables, apoyadas en el uso ético e inteligente de la tecnología.
+        </p>
+      </div>
+
+      <div class="mv-card" id="objetivo" aria-labelledby="objetivo-title">
+        <h2 id="objetivo-title">Objetivo</h2>
+        <p>
+          Desarrollar y mantener una plataforma tecnológica integral que optimice la gestión ambiental, reduzca los tiempos de 
+          respuesta ante incidencias y potencie la eficiencia operativa. City Go busca integrar herramientas modernas como geolocalización,
+          mensajería instantánea (WhatsApp) y reportes con evidencia fotográfica, facilitando la toma de decisiones basada en datos reales. 
+          Con ello, aspiramos a mejorar la calidad de vida urbana, promover la participación ciudadana y fortalecer la transparencia institucional.
+        </p>
+      </div>
+    </section>
+
+    <!-- 7) Fundador -->
+    <section id="fundador" class="section page">
+      <h2>Fundador de City Go</h2>
+      <div class="founder">
+        <img class="founder-photo" src="img/creatorCixGo.jpeg" alt="Foto del fundador">
+        <div class="founder-info">
+          <h3>Yhomar Cruz Vásquez</h3>
+          <p><strong>6to ciclo en Ingeniería de Sistemas e Informática</strong> — Universidad Tecnológica del Perú (UTP)</p>
+          <p class="muted">Programador y desarrollador junior del proyecto City Go, un joven comprometido con la sociedad que busca soluciones a los problemas actuales. 
+            Motivado por el deseo de mejorar la calidad de vida en las ciudades, desarrollando proyectos como “GreenHuarmi” (Huarmaca - Piura, en fase estudio) y “City Go” (Chiclayo - Lambayeque, en fase de producción).
+            Con conocimientos en backend y frontend, trabaja con Java, JavaScript, Python, HTML, CSS y MySQL. Apasionado por la innovación tecnológica y el desarrollo de aplicaciones móviles y web para generar impacto positivo y promover responsabilidad ambiental y bienestar ciudadano.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8) Contacto / Reportes -->
+    <section id="contacto" class="section page">
+      <h2>Contacto / Reportes</h2>
+      <p>Para reportar: completa los campos, luego toma una foto en el lugar del incidente. La foto debe tomarse con la ubicación activada para validar zona dentro de la Provincia de Chiclayo.</p>
+
+      <form id="reportForm" class="form" autocomplete="off">
+        <label>Nombre (obligatorio)
+          <input type="text" id="name" placeholder="Tu nombre">
+        </label>
+
+        <label>Ubicación (breve, obligatorio)
+          <input type="text" id="location" placeholder="Ej: Av. XX con YY">
+        </label>
+
+        <label>Descripción (obligatorio)
+          <textarea id="description" placeholder="Describe el problema" required></textarea>
+        </label>
+
+        <!-- AREA DE CAPTURA DE FOTO -->
+        <div id="photoArea" style="margin-top:12px;">
+          <div style="margin-bottom:8px; font-weight:700;">Paso siguiente: toma una foto (obligatorio)</div>
+
+          <!-- input file para abrir cámara en móviles/PC -->
+          <input id="photoInput" type="file" accept="image/*" capture="environment" style="display:block; margin-bottom:8px;">
+
+          <!-- botón para usar getUserMedia preview (opcional) -->
+          <button type="button" id="useCameraBtn" class="btn outline" style="margin-bottom:8px;">Abrir cámara en vivo</button>
+
+          <!-- preview del video en vivo y del canvas snapshot -->
+          <div id="cameraPreview" style="display:none; margin-bottom:8px;">
+            <video id="videoPreview" autoplay playsinline style="width:100%; max-width:420px; border-radius:8px;"></video>
+            <div style="margin-top:8px;">
+              <button type="button" id="takePhotoBtn" class="btn primary">Tomar foto</button>
+              <button type="button" id="closeCameraBtn" class="btn" style="background:#e05b4f;color:#fff">Cerrar cámara</button>
+            </div>
+          </div>
+
+          <!-- thumbnail de la foto tomada -->
+          <div id="photoPreviewWrap" style="display:none; margin-top:8px;">
+            <img id="photoPreview" alt="Foto tomada" style="max-width:100%; border-radius:8px; box-shadow:0 6px 20px rgba(0,0,0,0.08)">
+            <div id="geoInfo" style="margin-top:8px; color:var(--muted);"></div>
+          </div>
+        </div>
+
+        <div class="form-actions" style="margin-top:14px;">
+          <!-- No permitimos "guardar borrador". Solo PREPARAR y CONFIRMAR -->
+          <button type="button" id="prepareBtn" class="btn outline">Preparar reporte</button>
+          <button type="button" id="confirmSendBtn" class="btn primary" disabled>Confirmar y enviar</button>
+        </div>
+      </form>
+
+      <div id="savedList" class="saved-list" aria-live="polite" style="margin-top:16px;"></div>
+    </section>
+  </main>
+
+  <!-- FOOTER centrado -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-center">
+        <strong>City Go – Provincia de Chiclayo - Perú</strong>
+        <p>Todos los derechos reservados.<br>Desarrollado por equipo LEGIÓN LIBERATY como proyecto profesional académico sin fines de lucro.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DE CONFIRMACIÓN (City Go) -->
+  <div id="confirmModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="confirmModalTitle" style="display:none;">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-panel" role="document">
+      <h3 id="confirmModalTitle">Confirmar reporte — City Go</h3>
+
+      <div id="confirmModalSummary" style="white-space:pre-line; margin:12px 0; color:var(--muted); font-size:0.95rem;">
+        <!-- Aquí se inyecta el resumen del reporte -->
+      </div>
+
+      <div style="display:flex; gap:10px; justify-content:flex-end; margin-top:12px;">
+        <button id="confirmModalNo" class="btn outline">Cancelar</button>
+        <button id="confirmModalYes" class="btn primary">Confirmar y enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
