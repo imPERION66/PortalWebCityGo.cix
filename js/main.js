@@ -1,36 +1,38 @@
 /* ====== Funcionalidad avanzada para Contacto / Reportes (foto + geolocalización + validación por ZONAS de Chiclayo) ====== */
 (function(){
-  // === Normalizadores y helpers internos ===
-  function normalizeText(s){ return (s||'').toString().trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
-  function capitalize(s){ if(!s) return s; s = s.toString(); return s.charAt(0).toUpperCase()+s.slice(1); }
+  // === Normalizadores y helpers internos ===
+  function normalizeText(s){ return (s||'').toString().trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
+  function capitalize(s){ if(!s) return s; s = s.toString(); return s.charAt(0).toUpperCase()+s.slice(1); }
 
-  // === CONFIGURACIÓN DE CONTACTO ===
-  const WHATSAPP_NUMBER = "974748536"; // Número de City Go
-  const INITIAL_MESSAGE = "Hola, me gustaría reportar un punto crítico a través del portal web CixGo.";
-  
-  function makeWhatsappLink(text){
-      return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
-  }
+  // === CONFIGURACIÓN DE CONTACTO ===
+  const WHATSAPP_NUMBER = "974748536"; // Número de City Go
+  const INITIAL_MESSAGE = "Hola City Go, necesito:\n\n1. Enviar una sugerencia o idea\n2. Realizar una consulta general\n3. Otro motivo";
+  
+  function makeWhatsappLink(text){
+      return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+  }
 
-  // === Variables para la navegación (sidebar) ===
-  const sidebar = document.getElementById('sidebar');
-  const openSidebarBtn = document.getElementById('openSidebar');
-  const closeSidebarBtn = document.getElementById('closeSidebar');
-  const sidebarNavLinks = document.querySelectorAll('#sidebar .sidebar-nav a');
+  // === Variables para la navegación (sidebar) ===
+  const sidebar = document.getElementById('sidebar');
+  const openSidebarBtn = document.getElementById('openSidebar');
+  const closeSidebarBtn = document.getElementById('closeSidebar');
+  const sidebarNavLinks = document.querySelectorAll('#sidebar .sidebar-nav a');
 
-  // === Variables de contacto ===
-  const whatsappTop = document.getElementById("whatsappTop");
-  const whatsappSidebar = document.getElementById("whatsappSidebar");
+  // === Variables de contacto ===
+  const whatsappTop = document.getElementById("whatsappTop");
+  const whatsappSidebar = document.getElementById("whatsappSidebar");
+  const floatingWhatsappBtn = document.getElementById("floatingWhatsappBtn");
 
-  // === Inicializar Enlaces de WhatsApp ===
-  if (whatsappTop) whatsappTop.href = makeWhatsappLink(INITIAL_MESSAGE);
-  if (whatsappSidebar) whatsappSidebar.href = makeWhatsappLink(INITIAL_MESSAGE);
+  // === Inicializar Enlaces de WhatsApp ===
+  if (whatsappTop) whatsappTop.href = makeWhatsappLink(INITIAL_MESSAGE);
+  if (whatsappSidebar) whatsappSidebar.href = makeWhatsappLink(INITIAL_MESSAGE);
+  // <<< AÑADE ESTA LÍNEA >>>
+  if (floatingWhatsappBtn) floatingWhatsappBtn.href = makeWhatsappLink(INITIAL_MESSAGE);
 
-
-  // === Estructura de ZONAS de Chiclayo (normalizada) ===
-  const ZONAS_CHICLAYO = {
-    "cercado": [
-      "urb santa elena","rsd jose balta","urb los precursores","urb salaverry","urb los libertadores","pj jose olaya","lotizacion patazca",
+  // === Estructura de ZONAS de Chiclayo (normalizada) ===
+  const ZONAS_CHICLAYO = {
+    "cercado": [
+      "urb santa elena","rsd jose balta","urb los precursores","urb salaverry","urb los libertadores","pj jose olaya","lotizacion patazca",
       "pj jose olaya","urb felipe salaverry","pj 9 de octubre","pj elias aguirre (parte ii)","upis senor de los milagros","upis las americas",
       "pj el molino","pj jesus nazareno","urb ana de los angeles","urb santa angela","aahh la punta","urb polifap i","urb carmen angelica",
       "urb san felipe","urb villa el salvador","pj san nicolas","pastor boggiano","urb san borja","urb los bancarios","pj ricardo palma",
