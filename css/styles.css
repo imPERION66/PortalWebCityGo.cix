@@ -331,14 +331,10 @@ flex-wrap: wrap; /* Cambiado a 'wrap' para evitar desbordamiento en anchos inter
   background-color:#1DA851;
 }
 
-.float-whatsapp svg {
-  fill: #fff;
-  width: 28px;
-  height: 28px;
+.float-whatsapp i {
+  color: #fff; /* Asegura el color blanco */
+  font-size: 28px; /* Asegura el tamaño */
 }
-
-/* ======================================= */
-
 
 /* Responsive rules */
 /* Desktop: show top nav, hide sidebar controls */
