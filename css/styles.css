@@ -343,7 +343,6 @@ flex-wrap: wrap; /* Cambiado a 'wrap' para evitar desbordamiento en anchos inter
   .hamburger{display:none}
   .top-nav{display:flex}
   
-  /* ¡REGLA ELIMINADA! El botón flotante ahora se mostrará en escritorio */
 }
 
  /* Mobile/tablet: show hamburger and sidebar overlay */
