@@ -308,18 +308,7 @@ flex-wrap: wrap; /* Cambiado a 'wrap' para evitar desbordamiento en anchos inter
 }
 /* Botón flotante de WhatsApp */
 .float-whatsapp {
- position: fixed;
-  width: 56px;
-  height: 56px;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366; /* Verde City Go */
-  color: #fff;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-  z-index: 1500; /* Alto z-index para que esté siempre encima */
+  /* ... todas las demás propiedades ... */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -331,9 +320,11 @@ flex-wrap: wrap; /* Cambiado a 'wrap' para evitar desbordamiento en anchos inter
   background-color:#1DA851;
 }
 
-.float-whatsapp i {
-  color: #fff; /* Asegura el color blanco */
-  font-size: 28px; /* Asegura el tamaño */
+/* 🏆 ESTILO CLAVE: ASEGURA QUE EL SVG (VECTOR) SEA BLANCO Y VISIBLE 🏆 */
+.float-whatsapp svg {
+  fill: #fff; /* Usa 'fill' para el color interno del SVG */
+  width: 28px; /* Tamaño del icono */
+  height: 28px;
 }
 
 /* Responsive rules */
