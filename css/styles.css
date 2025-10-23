@@ -333,7 +333,7 @@ flex-wrap: wrap; /* Cambiado a 'wrap' para evitar desbordamiento en anchos inter
   background-color:#1DA851;
 }
 
-/* 🏆 ESTILO CLAVE: ASEGURA QUE EL SVG (VECTOR) SEA BLANCO Y VISIBLE 🏆 */
+/* ESTILO CLAVE: ASEGURA QUE EL SVG (VECTOR) SEA BLANCO Y VISIBLE*/
 .float-whatsapp svg {
   fill: #fff; /* Usa 'fill' para el color interno del SVG */
   width: 28px; /* Tamaño del icono */
