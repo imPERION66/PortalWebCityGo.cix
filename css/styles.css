@@ -337,7 +337,7 @@ flex-wrap: wrap; /* Cambiado a 'wrap' para evitar desbordamiento en anchos inter
 .float-whatsapp svg {
   fill: #fff; /* Usa 'fill' para el color interno del SVG */
   width: 20px; /* Tamaño del icono */
-  height: 28px;
+  height: 20px;
   display: block; /* Asegura que el SVG se muestre como bloque */
 }
 
