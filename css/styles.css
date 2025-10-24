@@ -309,11 +309,11 @@ flex-wrap: wrap; /* Cambiado a 'wrap' para evitar desbordamiento en anchos inter
 /* Botón flotante de WhatsApp */
 .float-whatsapp {
   position: fixed;
-  width: 56px;
-  height: 56px;
+  width: 70px;
+  height: 70px;
   bottom: 20px;
   right: 20px;
-  background-color: #25D366; /* Verde City Go */
+  background-color: #30d56d; /* Verde City Go */
   color: #fff;
   border-radius: 50%;
   text-align: center;
@@ -337,15 +337,16 @@ flex-wrap: wrap; /* Cambiado a 'wrap' para evitar desbordamiento en anchos inter
 
 /* Estilo para la imagen PNG del ícono */
 .whatsapp-img {
-  width: 30px; /* Tamaño un poco más grande que los 28px del SVG para que se vea bien */
-  height: 30px;
+  width: 50px; /* Tamaño un poco más grande que los 28px del SVG para que se vea bien */
+  height: 50px;
   display: block;
+  object-fit: contain; /* Asegura que la imagen encaje bien si hay padding extra */
 }
 
 /* Animación de pulsación (similar a la que encontraste) */
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    box-shadow: 0 0 0 0 rgba(55, 165, 95, 0.7);
   }
   70% {
     box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
